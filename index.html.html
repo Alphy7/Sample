@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Hello</title>
+		<style>
+		h1{color:green}
+		</style>
+		<script>
+			var count=1;
+			function change()
+			{
+				if(count==1)
+					document.getElementById("t1").src="2.jpg";
+				else if(count==2)
+					document.getElementById("t1").src="3.jpg";
+				else if(count==3)
+					document.getElementById("t1").src="1.jpg";
+				count++;
+				if(count==4)
+					count=1;
+			}
+		</script>
+	</head>
+		<body bgcolor="pink">
+		<h1 style="text-align:center">Treking</h1>
+		<table width="100%">
+			<tr bgcolor="black">
+				<td><a href="#" style="color:white;font-size:30;">Home</a></td>
+				<td><a href="#" style="color:white;font-size:30;">About us</a></td>
+				<td><a href="#" style="color:white;font-size:30;">Treck Planning</a></td>
+				<td><a href="#" style="color:white;font-size:30;">Contact us</a></td>
+			</tr>
+		</table>
+		<div align="center">
+		<img src="1.jpg" width="700px" height="400px" id="t1">
+		<input type="button" value="next" onclick="change()">
+		</div>
+		<div style="color:white;background-color:black;font-size:"40">
+		<p align="center">Website created by Ameet</p>
+		</div>
+		</body>
+</html>
